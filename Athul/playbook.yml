@@ -2,7 +2,7 @@
 - name: playbook for creating a webserver
   hosts: all
   tasks:
-    - name: Import sec role
+    - name: Import webserver role
       vars:
         firm_name: athl
         email_id: athul@.com 
