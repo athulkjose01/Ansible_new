@@ -6,4 +6,4 @@ users:
 
 pack_1: httpd
 ser_1: httpd
-rul_1: vsfptd
+rul_1: httpd
