@@ -16,12 +16,6 @@
     state: started
     enabled: yes
 
-- name: Add a rule {{rul_1}}
-  firewalld:
-    service: "{{rul_1}}"
-    immediate: yes
-    permanent: yes
-    state: enabled
 
 - name: upload template
   template:
