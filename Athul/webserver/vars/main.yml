@@ -1,0 +1,9 @@
+---
+# vars file for webserver
+users:
+  - Bum
+  - Kum
+
+pack_1: httpd
+ser_1: httpd
+rul_1: vsfptd

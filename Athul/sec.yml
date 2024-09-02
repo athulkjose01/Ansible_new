@@ -1,0 +1,14 @@
+---
+- name: playbook for creating a webserver
+  hosts: all
+  tasks:
+    - name: Import sec role
+      vars:
+        firm_name: athl
+        email_id: athul@.com 
+        phone_number: 345678905
+      import_role: 
+        name: webserver
+...
+
+

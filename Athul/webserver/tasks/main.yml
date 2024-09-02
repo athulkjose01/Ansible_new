@@ -1,0 +1,30 @@
+---
+- name: Create Multiple Users
+  user:
+    name: "{{item}}"
+    state: present
+  loop: "{{users}}"
+
+- name: Install {{pack_1}}
+  yum:
+    name: "{{pack_1}}"
+    state: latest
+
+- name: Start and enable {{ser_1}}
+  service:
+    name: "{{ser_1}}"
+    state: started
+    enabled: yes
+
+- name: Add a rule {{rul_1}}
+  firewalld:
+    service: "{{rul_1}}"
+    immediate: yes
+    permanent: yes
+    state: enabled
+
+- name: upload template
+  template:
+    src: index.j2
+    dest: /var/www/html/index.html
+  notify: restart_web

@@ -1,0 +1,10 @@
+[rhel]
+servera.lab.example.com
+
+[rhelsys]
+serverb.lab.example.com
+
+
+[linux:children]
+rhel
+rhelsys
